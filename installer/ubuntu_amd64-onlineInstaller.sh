@@ -37,14 +37,14 @@ echo ' ' >> unins
 echo 'xhost - 127.0.0.1' >> unins
 echo 'rm -f *' >> unins
 
+
+echo "Installing"
 chmod +x startUbuntu
 chmod +x unins
- 
 
-
-mv * $1 || exit -1
+mv * $Target || exit -1
 rm -rf ../installerCache
-cd $1 || exit -1
+cd $Target || exit -1
 
 echo 'Preparing for first startup'
 bash setubuntu_amd64.bash || exit -1
