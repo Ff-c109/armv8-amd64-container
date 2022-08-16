@@ -1,7 +1,7 @@
 echo "Preparing files"
 mkdir installerCache || exit -1
 echo "Downloading resource"
-wget https://ff-c109.github.io/armv8-amd64-container/installer/ubuntu_amd64-res.apk
+wget -c https://ff-c109.github.io/armv8-amd64-container/installer/ubuntu_amd64-res.apk
 echo "Uncompressing resource"
 cd installerCache || exit -1
 unzip ../ubuntu_amd64-res.apk
