@@ -42,6 +42,7 @@ echo "Installing"
 chmod +x startUbuntu
 chmod +x unins
 
+Target=`cat pth.tmp`
 mv * $Target || exit -1
 rm -rf ../installerCache
 cd $Target || exit -1
